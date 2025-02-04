@@ -15,4 +15,4 @@ L’objectiu principal és ajudar els usuaris a trobar millors oportunitats de v
 - **Back-End**: [Node.js](https://nodejs.org/)
 - **Base de Dades**: [MongoDB](https://www.mongodb.com/)
 - **API de Vols**: [Amadeus](https://developers.amadeus.com/) 
-- **Enviament de Correu**: [SendGrid](https://sendgrid.com/) o altres serveis similars
+- **Enviament de Correu**: [SendGrid](https://sendgrid.com/)
