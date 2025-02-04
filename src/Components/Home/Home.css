@@ -1,0 +1,179 @@
+:root {
+    --PrimaryColor: hsl(26, 59%, 48%);
+    --HoverColor: hsl(26, 91%, 43%);
+    --WhiteColor: hsl(30, 5%, 66%);
+    --BackColor: hsl(0, 0%, 19%);
+    --TextColor: hsl(240, 1%, 48%);
+    --GreyBg: hsl(0, 0%, 91%);
+    --GreyText: rgb(190, 190, 190);
+    --InputColor: hsla(325, 38%, 85%, 0.678);
+  }
+  
+  .home {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Assets/sky.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .secContainer {
+    .homeText {
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 2rem;
+      color: var(--WhiteColor);
+      font-weight: 700;
+      line-height: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .subTitle {
+      font-size: 13px;
+      color: var(--WhiteColor);
+      opacity: .9;
+      font-weight: 300;
+      padding: 1rem 0;
+      max-width: 70%;
+      text-align: center;
+      margin: auto;
+    }
+  
+    .btn {
+      padding: .6rem 1.5rem;
+    }
+  }
+  
+  .homeCard {
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: var(--WhiteColor);
+    position: absolute;
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
+    justify-content: space-between; 
+    align-items: center;
+    bottom: -26%;
+    transform: translate(-50%);
+    left: 50%;
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+    flex-wrap: wrap; 
+  }
+  
+  .locationDiv, .distDiv, .priceDiv {
+    flex: 1; 
+  }
+  
+  label {
+    display: block;
+    color: var(--TextColor);
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 0.5rem; 
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--InputColor);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  input::placeholder {
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 500;
+  }
+  
+  .locationDiv, .distDiv {
+    position: relative;
+  }
+  
+  .suggestions-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: var(--InputColor);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px; 
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--TextColor);
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: var(--HoverColor);
+    color: white;
+  }
+
+  .btn {
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    margin: 3px 2px; 
+    cursor: pointer; 
+    border-radius: 6px;
+    transition: background-color 0.3s ease; 
+  }
+
+
+  .dateDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+  }
+  
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: var(--InputColor);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .oneWayCheckbox {
+    margin-top: 30px; 
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+  .oneWayCheckbox label {
+    font-size: 13px;
+    color: var(--TextColor);
+    font-weight: 500;
+  }
+  
+  

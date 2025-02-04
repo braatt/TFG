@@ -1,0 +1,231 @@
+.main-content {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+}
+
+.left-container {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.destinations-btn{
+  background-color: hsl(26, 59%, 48%); 
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+
+.secondary-btn {
+  background-color: hsl(26, 59%, 48%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.destinations-btn:hover, .secondary-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.material-symbols-outlined {
+  font-size: 1.3rem; 
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.flight-card {
+  border: none;
+  border-radius: 8px; 
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0; 
+  transform: translateY(30px); 
+  animation: slideIn 0.8s forwards; 
+}
+
+.flight-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.flight-card:nth-child(1) {
+  animation-delay: 0s;
+}
+.flight-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.flight-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.flight-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.flight-card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.flight-card:nth-child(6) {
+  animation-delay: 1s;
+}
+.flight-card:nth-child(7) {
+  animation-delay: 1s;
+}
+.flight-card:nth-child(8) {
+  animation-delay: 1s;
+}
+.flight-card:nth-child(9) {
+  animation-delay: 1s;
+}
+.flight-card:nth-child(10) {
+  animation-delay: 1s;
+}
+.flight-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.flight-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flight-section h4 {
+  font-size: 1.1rem;
+  color: hsl(26, 59%, 48%); 
+  margin-bottom: 8px;
+}
+
+.flight-section p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Precio total */
+.price {
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.book-btn {
+  margin-top: 15px;
+  background-color: hsl(26, 59%, 48%); 
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: hsl(26, 91%, 43%); 
+  transform: scale(1.05); 
+}
+
+.no-results {
+  font-size: 1.2rem;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.co2-comparison {
+  font-size: 0.9rem;
+  font-weight: bold; 
+  color: #333333;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #eaf8e6; 
+  border-left: 4px solid #4caf50; 
+  text-align: center; 
+}
+
+.co2-comparison.alternative {
+  background-color: #ffe6e6; 
+  border-left: 4px solid #f44336; 
+}

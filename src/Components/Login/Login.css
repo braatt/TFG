@@ -1,0 +1,49 @@
+.authContainer {
+    width: 300px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--GreyBg);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 120px; 
+  }
+  
+
+.authContainer h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--PrimaryColor);
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formField label {
+  font-size: 0.9rem;
+  color: var(--TextColor);
+  margin-bottom: 0.5rem;
+}
+
+.formField input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--GreyText);
+  background-color: var(--InputColor);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  color: #fff;
+  background-color: var(--PrimaryColor);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submitBtn:hover {
+  background-color: var(--HoverColor);
+}

@@ -1,0 +1,72 @@
+
+  .authCard {
+    width: 100%;
+    max-width: 400px;
+    background: var(--WhiteColor);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+    position: relative;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10rem; 
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    color: #fff;
+    background-color: var(--PrimaryColor);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+  .authCard h2 {
+    text-align: center;
+    color: var(--BackColor);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .authCard input {
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--GreyBg);
+    font-size: 1rem;
+    color: var(--BackColor);
+  }
+  
+  .authCard button {
+    padding: 1rem;
+    background-color: var(--PrimaryColor);
+    color: var(--WhiteColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .authCard button:hover {
+    background-color: var(--HoverColor);
+  }
+  
+  .authCard .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .authCard .footer a {
+    color: var(--PrimaryColor);
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .authCard .footer a:hover {
+    color: var(--HoverColor);
+  }
+  
