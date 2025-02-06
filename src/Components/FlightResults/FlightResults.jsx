@@ -31,7 +31,7 @@ const FlightResults = () => {
   };
 
   const getAirportCoordinates = async (iataCode) => {
-    const apiKey = '4b9d943039dd41adbeecc72d8f987460';
+    const apiKey = process.env.OPEN_KEY;
     const url = `https://api.opencagedata.com/geocode/v1/json?q=${iataCode}&key=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
