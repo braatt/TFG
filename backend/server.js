@@ -265,8 +265,8 @@ app.post('/api/results', async (req, res) => {
 
 
 const getToken = async () => {
-  const clientId = 'UGw0qZgoWA5ykR6QjAgFcpowAbnlEeIt';
-  const clientSecret = 'VlZGyMZQreGU4xH9';
+  const clientId = process.env.CLIENT_ID;
+  const clientSecret = process.env.CLIENT_SECRET;
 
   const url = 'https://test.api.amadeus.com/v1/security/oauth2/token';
 
